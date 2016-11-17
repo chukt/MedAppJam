@@ -20,7 +20,6 @@ public class MainActivity extends AppCompatActivity {
         loginButton = (Button) findViewById(R.id.login_btn);
         username = (EditText) findViewById(R.id.email_address);
         password = (EditText) findViewById(R.id.password);
-        String user_text = username.getText().toString();
-        result.setText(user_text);
+
     }
 }
