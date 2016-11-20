@@ -9,11 +9,14 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.karen.medappjam1.MainActivity">
 
-<!--    <TextView
+
+    <Button
+        android:id="@+id/new_user"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />-->
-
+        android:layout_above="@+id/email_address"
+        android:text="New User?"
+        android:layout_alignEnd="@+id/email_address" />
     <EditText
         android:id="@+id/email_address"
         android:layout_width="fill_parent"
@@ -36,7 +39,8 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:text="Login"
-        android:layout_below="@+id/password" />
+        android:layout_below="@+id/password"
+        android:onClick="login" />
 
     <EditText
         android:id="@+id/result"
