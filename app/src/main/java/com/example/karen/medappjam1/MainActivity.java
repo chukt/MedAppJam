@@ -8,10 +8,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-<<<<<<< HEAD
 import android.view.View.OnClickListener;
-=======
->>>>>>> origin/master
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -25,13 +22,11 @@ public class MainActivity extends AppCompatActivity {
     EditText username;
     EditText password;
     EditText result;
-<<<<<<< HEAD
+
     private Button button;
 
-=======
     String user;
     private static final String KEY_INDEX = "username";
->>>>>>> origin/master
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         final Context context = this;
