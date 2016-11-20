@@ -33,6 +33,13 @@
         android:text="Random Event \n\n\n\n\n"
     android:layout_below="@+id/myEventsLabel"/>
 
+    <Button
+        android:id="@+id/buttonUrl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/forum" />
+
+
     <EditText
         android:id="@+id/suggestedLabel"
         android:layout_width="wrap_content"
