@@ -39,7 +39,5 @@
         android:hint="@string/email"
         android:layout_below="@+id/last_name"/>
 
-    <EditText
-        android:layout_width="fill_parent"
-        android:layout_height="" />
+    
 </RelativeLayout>
