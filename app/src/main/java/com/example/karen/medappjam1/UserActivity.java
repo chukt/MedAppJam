@@ -19,6 +19,7 @@ public class UserActivity extends AppCompatActivity {
         Intent intent = getIntent();
         String user = intent.getStringExtra("username");
 
+        //Forum - Code provided by ahrasis (http://www.simplemachines.org/community/index.php?topic=526773.0)
         button = (Button) findViewById(R.id.buttonUrl);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
