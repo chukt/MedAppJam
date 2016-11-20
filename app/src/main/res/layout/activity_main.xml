@@ -34,11 +34,6 @@
         android:layout_centerVertical="true"
         android:layout_alignParentStart="true" />
 
-    <Button
-        android:id="@+id/buttonUrl"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/forum" />
 
     <Button
         android:id="@+id/login_btn"

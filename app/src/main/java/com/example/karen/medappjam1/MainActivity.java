@@ -8,10 +8,14 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+<<<<<<< HEAD
 
 import android.view.View.OnClickListener;
 
 
+=======
+import android.view.View.OnClickListener;
+>>>>>>> ce4102c9536dd3bb8030cdce2afe44f16916d2a4
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -27,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
     EditText username;
     EditText password;
     EditText result;
+<<<<<<< HEAD
 
     private Button button;
 
@@ -36,15 +41,25 @@ public class MainActivity extends AppCompatActivity {
     String user;
     private static final String KEY_INDEX = "username";
 
+=======
+<<<<<<< HEAD
+
+    private Button button;
+=======
+>>>>>>> 39f6c20362327e3bd3165ba33d7918e087d301ae
+
+    String user;
+    private static final String KEY_INDEX = "username";
+>>>>>>> ce4102c9536dd3bb8030cdce2afe44f16916d2a4
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        final Context context = this;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         newUserButton = (Button) findViewById(R.id.new_user);
         loginButton = (Button) findViewById(R.id.login_btn);
         username = (EditText) findViewById(R.id.email_address);
         password = (EditText) findViewById(R.id.password);
+<<<<<<< HEAD
 
 //        Log.d("tag", "Log is working");
 
@@ -59,6 +74,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+=======
+>>>>>>> ce4102c9536dd3bb8030cdce2afe44f16916d2a4
     }
 
 //    @Override
