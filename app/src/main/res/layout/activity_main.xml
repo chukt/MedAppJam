@@ -16,7 +16,8 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/email_address"
         android:text="New User?"
-        android:layout_alignEnd="@+id/email_address" />
+        android:layout_alignEnd="@+id/email_address"
+        android:onClick="new_user"/>
     <EditText
         android:id="@+id/email_address"
         android:layout_width="fill_parent"
@@ -48,11 +49,6 @@
         android:layout_below="@+id/password"
         android:onClick="login" />
 
-    <EditText
-        android:id="@+id/result"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/login_btn"
-        />
+
 
 </RelativeLayout>

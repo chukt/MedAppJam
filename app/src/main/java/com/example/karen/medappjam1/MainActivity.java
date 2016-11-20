@@ -8,15 +8,17 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-<<<<<<< HEAD
+
 import android.view.View.OnClickListener;
-=======
->>>>>>> origin/master
+
+
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.content.Intent;
 import android.content.Context;
+
+import java.util.ArrayList;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -25,13 +27,15 @@ public class MainActivity extends AppCompatActivity {
     EditText username;
     EditText password;
     EditText result;
-<<<<<<< HEAD
+
     private Button button;
 
-=======
+    ArrayList<String> usernameList;
+
+
     String user;
     private static final String KEY_INDEX = "username";
->>>>>>> origin/master
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         final Context context = this;
@@ -41,6 +45,9 @@ public class MainActivity extends AppCompatActivity {
         loginButton = (Button) findViewById(R.id.login_btn);
         username = (EditText) findViewById(R.id.email_address);
         password = (EditText) findViewById(R.id.password);
+
+//        Log.d("tag", "Log is working");
+
 
         //forum
         button = (Button) findViewById(R.id.buttonUrl);
@@ -62,10 +69,26 @@ public class MainActivity extends AppCompatActivity {
 //
 //    }
 
+    public void new_user(View view){
+        Intent intent = new Intent(this, newUser.class);
+        startActivity(intent);
+        Intent intent2 = getIntent();
+        usernameList = intent2.getStringArrayListExtra("usernameList");
+
+    }
 
     public void login(View view){
         Intent intent = new Intent(this, UserActivity.class);
         intent.putExtra("username", user);
+        Log.d("random", "Log is working");
+        String userSize = Integer.toString(usernameList.size());
+//        Log.d("usernameList Size", Integer.toString(usernameList.size()));
+//        for(int i = 0; i<usernameList.size(); i++)
+//        {
+//            if(usernameList.get(i) == user)
+//                startActivity(intent);
+//            Log.d("Something", usernameList.get(i));
+//        }
         startActivity(intent);
     }
 }
