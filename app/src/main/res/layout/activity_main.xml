@@ -22,7 +22,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:hint="@string/username"
-        android:inputType="textEmailAddress"
+        android:inputType="text"
         android:layout_above="@+id/password" />
 
     <EditText
@@ -30,6 +30,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:hint="@string/password"
+        android:inputType="textPassword"
         android:layout_centerVertical="true"
         android:layout_alignParentStart="true" />
 
@@ -48,11 +49,6 @@
         android:layout_below="@+id/password"
         android:onClick="login" />
 
-    <EditText
-        android:id="@+id/result"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/login_btn"
-        />
+
 
 </RelativeLayout>

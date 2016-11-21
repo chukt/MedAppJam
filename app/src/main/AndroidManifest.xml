@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.karen.medappjam1">
-    android:versionCode="1"
-    android:versionName="1.0" >
 
     <uses-sdk
         android:minSdkVersion="9"
         android:targetSdkVersion="19" />
-
+    android:versionCode="1"
+    android:versionName="1.0" >
     <uses-permission android:name="android.permission.INTERNET" />
 
-
+    <android:uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <android:uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -21,7 +22,6 @@
         <activity
             android:name=".ForumActivity"
             android:theme="@android:style/Theme.NoTitleBar" />
-
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -30,7 +30,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".UserActivity" />
-        <activity android:name=".newUser"></activity>
+        <activity android:name=".newUser" />
+        <activity android:name=".add_event" />
+        <activity android:name=".displayEventDetails"></activity>
     </application>
 
 </manifest>
