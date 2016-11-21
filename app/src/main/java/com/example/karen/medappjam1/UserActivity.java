@@ -11,6 +11,8 @@ import android.widget.TextView;
 public class UserActivity extends AppCompatActivity {
 
     private Button button;
+    private Button calendarButton;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         final Context context = this;
@@ -25,6 +27,16 @@ public class UserActivity extends AppCompatActivity {
             @Override
             public void onClick(View arg0) {
                 Intent intent = new Intent(context, ForumActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        // Calendar - Open-sourced Android library: (https://github.com/SundeepK/CompactCalendarView)
+        calendarButton = (Button) findViewById(R.id.calendarButton);
+        calendarButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(view.getContext(), CalendarActivity.class);
                 startActivity(intent);
             }
         });
