@@ -5,13 +5,18 @@
     <string name="forum">Click To Enter Forum</string>
     <string name="myEvents">My Events</string>
     <string name="suggestedLabel">Suggested</string>
-    <string name="first_name">First name: </string>
-    <string name="last_name">Last Name: </string>
-    <string name="email">Email: </string>
+    <string name="first_name">First name</string>
+    <string name="last_name">Last Name</string>
+    <string name="email">Email</string>
     <string name="createUsername">Username: </string>
+<<<<<<< HEAD
     <string name="activity_name">Activity</string>
     <string name="date">Date</string>
     <string name="time">Time</string>
     <string name="location">Location </string>
     <string name="additional_details">Additional Details</string>
+=======
+    <string name="phoneNumber">Phone number (Optional)</string>
+    <string name="verificationCode">Verification code:</string>
+>>>>>>> 59520692ba4ac41565f4ba4b29705eca39dc257c
 </resources>

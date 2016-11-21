@@ -2,6 +2,7 @@ package com.example.karen.medappjam1;
 
 /**
  * Created by richmondliu on 11/16/16.
+ * Forum - Code provided by ahrasis (http://www.simplemachines.org/community/index.php?topic=526773.0)
  */
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -40,12 +41,12 @@ public class ForumActivity extends Activity {
         webView.getSettings().setBuiltInZoomControls(true);
 
         // Change to your own forum url
-        webView.loadUrl("http://medappjamtest.forumotion.com/f1-your-first-forum");
+        webView.loadUrl("http://healthcarenect.forumotion.com");
 
         webView.setWebViewClient(new WebViewClient() {
             public boolean shouldOverrideUrlLoading(WebView view, String url) {
                 // Loads only your frum domain and no others!
-                if(url.contains("http://medappjamtest.forumotion.com/f1-your-first-forum") == true) {
+                if(url.contains("http://healthcarenect.forumotion.com") == true) {
                     view.loadUrl(url);
                     // Adds Progress Bar Support
                     super.onPageStarted(view, url, null);

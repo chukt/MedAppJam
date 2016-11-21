@@ -9,12 +9,17 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 59520692ba4ac41565f4ba4b29705eca39dc257c
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.content.Intent;
 import android.content.Context;
+
+import java.util.ArrayList;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -26,28 +31,27 @@ public class MainActivity extends AppCompatActivity {
 
     private Button button;
 
+<<<<<<< HEAD
     String user;
     private static final String KEY_INDEX = "username";
+=======
+    ArrayList<String> usernameList;
+
+
+    String user;
+    private static final String KEY_INDEX = "username";
+
+
+>>>>>>> 59520692ba4ac41565f4ba4b29705eca39dc257c
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        final Context context = this;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         newUserButton = (Button) findViewById(R.id.new_user);
         loginButton = (Button) findViewById(R.id.login_btn);
         username = (EditText) findViewById(R.id.email_address);
         password = (EditText) findViewById(R.id.password);
-
-        //forum
-        button = (Button) findViewById(R.id.buttonUrl);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View arg0) {
-                Intent intent = new Intent(context, ForumActivity.class);
-                startActivity(intent);
-            }
-        });
-
+//        Log.d("tag", "Log is working");
     }
 
 //    @Override
@@ -58,10 +62,26 @@ public class MainActivity extends AppCompatActivity {
 //
 //    }
 
+    public void new_user(View view){
+        Intent intent = new Intent(this, newUser.class);
+        startActivity(intent);
+        Intent intent2 = getIntent();
+        usernameList = intent2.getStringArrayListExtra("usernameList");
+
+    }
 
     public void login(View view){
         Intent intent = new Intent(this, UserActivity.class);
         intent.putExtra("username", user);
+        Log.d("random", "Log is working");
+        //String userSize = Integer.toString(usernameList.size());
+//        Log.d("usernameList Size", Integer.toString(usernameList.size()));
+//        for(int i = 0; i<usernameList.size(); i++)
+//        {
+//            if(usernameList.get(i) == user)
+//                startActivity(intent);
+//            Log.d("Something", usernameList.get(i));
+//        }
         startActivity(intent);
     }
 }

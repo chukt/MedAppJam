@@ -9,9 +9,12 @@
     android:versionName="1.0" >
     <uses-permission android:name="android.permission.INTERNET" />
 
+<<<<<<< HEAD
     <android:uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <android:uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+=======
+>>>>>>> 59520692ba4ac41565f4ba4b29705eca39dc257c
 
     <application
         android:allowBackup="true"
@@ -30,9 +33,14 @@
             </intent-filter>
         </activity>
         <activity android:name=".UserActivity" />
+<<<<<<< HEAD
         <activity android:name=".newUser" />
         <activity android:name=".add_event" />
         <activity android:name=".displayEventDetails"></activity>
+=======
+        <activity android:name=".newUser"></activity>
+        <activity android:name=".CalendarActivity"></activity>
+>>>>>>> 59520692ba4ac41565f4ba4b29705eca39dc257c
     </application>
 
 </manifest>
