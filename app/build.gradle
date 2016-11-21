@@ -28,8 +28,5 @@ dependencies {
     compile('com.google.api-client:google-api-client-android:1.22.0') {
         exclude group: 'org.apache.httpcomponents'
     }
-    compile('com.google.apis:google-api-services-calendar:v3-rev225-1.22.0') {
-        exclude group: 'org.apache.httpcomponents'
-    }
-    compile 'com.github.sundeepk:compact-calendar-view:1.9.4'
+    testCompile 'junit:junit:4.12'
 }

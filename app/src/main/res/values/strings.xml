@@ -2,28 +2,13 @@
     <string name="app_name">MedAppJam 1</string>
     <string name="username">Username</string>
     <string name="password">Password</string>
-<<<<<<< HEAD
-
     <string name="forum">Click To Enter Forum</string>
-
-=======
-    <string name="forum">Click To Enter Forum</string>
->>>>>>> ce4102c9536dd3bb8030cdce2afe44f16916d2a4
     <string name="myEvents">My Events</string>
     <string name="suggestedLabel">Suggested</string>
     <string name="first_name">First name</string>
     <string name="last_name">Last Name</string>
     <string name="email">Email</string>
     <string name="createUsername">Username: </string>
-<<<<<<< HEAD
     <string name="phoneNumber">Phone number (Optional)</string>
     <string name="verificationCode">Verification code:</string>
-
-
-=======
-<<<<<<< HEAD
-=======
-
->>>>>>> 39f6c20362327e3bd3165ba33d7918e087d301ae
->>>>>>> ce4102c9536dd3bb8030cdce2afe44f16916d2a4
 </resources>
