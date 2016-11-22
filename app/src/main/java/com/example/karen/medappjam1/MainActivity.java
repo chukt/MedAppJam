@@ -9,10 +9,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
-<<<<<<< HEAD
 
-=======
->>>>>>> 59520692ba4ac41565f4ba4b29705eca39dc257c
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -31,10 +28,9 @@ public class MainActivity extends AppCompatActivity {
 
     private Button button;
 
-<<<<<<< HEAD
-    String user;
-    private static final String KEY_INDEX = "username";
-=======
+
+
+
     ArrayList<String> usernameList;
 
 
@@ -42,7 +38,6 @@ public class MainActivity extends AppCompatActivity {
     private static final String KEY_INDEX = "username";
 
 
->>>>>>> 59520692ba4ac41565f4ba4b29705eca39dc257c
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -1,20 +1,19 @@
 package com.example.karen.medappjam1;
 
-<<<<<<< HEAD
+
 import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-=======
+
 import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
->>>>>>> 59520692ba4ac41565f4ba4b29705eca39dc257c
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -23,6 +22,7 @@ import java.util.List;
 public class UserActivity extends AppCompatActivity {
     private static final int REQUEST_NEW_EVENT_CODE = 0;
     private String event_info;
+    private String event_display;
     private List<String> events = new ArrayList<>();
 
     private Button button;
@@ -81,11 +81,13 @@ public class UserActivity extends AppCompatActivity {
         if(requestCode == REQUEST_NEW_EVENT_CODE){
             if(resultCode == Activity.RESULT_OK){
                 event_info = event.getStringExtra("new_activity");
+                event_display = event.getStringExtra("new_activity_details");
                 events.add(event_info);
             }
         }
         else{
             event_info = event.getStringExtra("new_activity");
+            event_display = event.getStringExtra("new_activity_details");
             events.add(event_info);
         }
         displayEvents();
@@ -95,6 +97,19 @@ public class UserActivity extends AppCompatActivity {
         Intent intent = new Intent(this, add_event.class);
         startActivityForResult(intent, REQUEST_NEW_EVENT_CODE);
 
+    }
+
+    public void displayDetails(View view){
+        Intent intent = new Intent(this, displayEventDetails.class);
+        intent.putExtra("event_info", event_display);
+        startActivity(intent);
+    }
+
+    public void displayDetailsHard(View view){
+        String hard_coded = "Title: Tai Chi\nDate: 11/26\nTime: 8 am\nPlace: UC Irvine";
+        Intent intent = new Intent(this, displayEventDetails.class);
+        intent.putExtra("event_info", hard_coded);
+        startActivity(intent);
     }
 
 }

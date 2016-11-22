@@ -16,6 +16,7 @@ public class add_event extends AppCompatActivity {
     EditText location;
     EditText additional_details;
     String result;
+    String result2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,9 +35,12 @@ public class add_event extends AppCompatActivity {
 
         result = activity_name.getText().toString() + "\n" + date.getText().toString() + "\n at " +
                 time.getText().toString() +"\n at " + location.getText().toString();
+        result2 = "Title: " + activity_name.getText().toString() + "\nDate: " + date.getText().toString() + "\nTime: " +
+                time.getText().toString() +"\nPlace: " + location.getText().toString();
         Intent event = new Intent();
         event.putExtra("new_activity", result);
         event.putExtra("additional_info", additional_details.getText().toString());
+        event.putExtra("new_activity_details", result2);
         setResult(RESULT_OK, event);
         finish();
     }

@@ -19,12 +19,11 @@ public class newUser extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.new_user);
 
-<<<<<<< HEAD
-=======
+
 
 
         usernameWidget = (EditText)findViewById(R.id.username);
->>>>>>> 59520692ba4ac41565f4ba4b29705eca39dc257c
+
     }
 
     public void signUp(View view) {
