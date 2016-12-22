@@ -106,7 +106,7 @@ public class UserActivity extends AppCompatActivity {
     }
 
     public void displayDetailsHard(View view){
-        String hard_coded = "Title: Tai Chi\nDate: 11/26\nTime: 8 am\nPlace: UC Irvine";
+        String hard_coded = "Title: Diabetes Cooking Class\nDate: 11/28\nTime: 6 pm\nPlace: UC Irvine";
         Intent intent = new Intent(this, displayEventDetails.class);
         intent.putExtra("event_info", hard_coded);
         startActivity(intent);

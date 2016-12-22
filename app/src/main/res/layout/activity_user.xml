@@ -80,7 +80,7 @@
         android:paddingLeft="15dp"
         android:paddingRight="15dp"
         android:paddingTop="25dp"
-        android:text="Tai Chi \n 11/26 Sat. \n AT 8 am \n UC Irvine"
+        android:text="Diabetes Cooking Class \n 11/28 Mon. \n AT 6 pm \n UC Irvine"
         android:elevation="100dp"
         android:onClick="displayDetailsHard"
         android:layout_below="@+id/suggestedLabel"/>
